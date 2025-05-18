@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estiloformu.css" />
+    <title>Registro</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Registro</h1>
+        <form method="post" action="php/registro.php">
+            <div class="nombre">
+                <input type="text" required name="nombre" />
+                <label>Nombre</label>
+            </div>
+            <div class="email">
+                <input type="email" required name="email" />
+                <label>Correo Electrónico</label>
+            </div>
+            
+            <div class="contraseña">
+                <input type="password" required name="contraseña" />
+                <label>Contraseña</label>
+            </div>
+
+           
+            <div class="telefono">
+                <input type="text" required name="telefono" pattern="\d{7}" title="Debe contener 7 dígitos" maxlength="7" />
+                <label>Teléfono (7 dígitos)</label>
+            </div>
+
+       
+
+            <div class="cuenta">
+                <input type="submit" value="¡Listo!" name="registro" />
+            </div>
+            <div class="redireccion">
+                <h4>¿Ya tiene una cuenta?</h4>
+                <h4><a href="Index.html">Inicio de Sesión</a></h4>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
